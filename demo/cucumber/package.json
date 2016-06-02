@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./run-tests"
   },
   "author": "Daniel Maslowski <daniel.maslowski@shop.co> (https://shop.co/)",
-  "license": "ISC"
+  "license": "MIT"
 }

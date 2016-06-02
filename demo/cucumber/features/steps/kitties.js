@@ -6,8 +6,8 @@ module.exports = function() {
   this.World = require('../support/world.js');
 
   this.Given(/^I open the main site$/, function (cb) {
-     this.visit('http://localhost:3000/', cb);
-     //this.visit('https://metaspora.org/meteor-react-testing/', cb);
+     //this.visit('http://localhost:3000/', cb);
+     this.visit('https://metaspora.org/meteor-react-testing/', cb);
    });
 
    this.When(/^I count the cat pics$/, function (cb) {

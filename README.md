@@ -27,11 +27,8 @@ The app will be running on `http://localhost:8012`.
 
 Demos are in `demo/jasmine/` and `demo/cucumber/` respectively.
 
-To be able to run them, in either directory run `npm install`.
-
 For the `cucumber` tests, you will need `phantomjs` and `selenium-start` installed and available in your `$PATH`.
-Then execute the script: `./run-tests`
 
-For `jasmine`, just run `./node_modules/.bin/jasmine`.
+To run them, in either directory run `npm install && npm test`.
 
 If it works, I'm happy. If something doesn't, please reach out to me, because that's why I'm doing this! 🐢

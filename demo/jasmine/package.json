@@ -1,13 +1,13 @@
 {
-  "name": "demo",
+  "name": "jasmine-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "example.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jasmine"
   },
   "author": "Daniel Maslowski <daniel.maslowski@shop.co> (https://shop.co/)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "emoji-generator": "^1.0.3"
   },
