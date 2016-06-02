@@ -1,0 +1,16 @@
+{
+  "name": "cucumber-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cucumber": "^1.0.0",
+    "webdriverio": "^4.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Maslowski <daniel.maslowski@shop.co> (https://shop.co/)",
+  "license": "ISC"
+}

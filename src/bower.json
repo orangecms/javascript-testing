@@ -1,0 +1,26 @@
+{
+  "name": "javascript-testing-slides",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Maslowski <info@orangecms.org>"
+  ],
+  "description": "slides for a talk on obstacles encountered when testing JavaScript",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "testing",
+    "cucumber",
+    "jasmine"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "remark": "^0.13.0"
+  }
+}
