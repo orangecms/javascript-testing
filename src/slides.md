@@ -138,13 +138,16 @@ class: center, middle
 - installation takes a looong time
 - running the first time downloads a local copy of selenium
 
+---
+
+## and then...
+
 --
 
-
-- and then... 100% CPU on a Node thread
+100% CPU on a Node thread
+![Chimp process](img/chimp-dead.png)
 
 --
-
 
 😿
 
@@ -160,7 +163,7 @@ class: center, middle
 --
 
 
-- no support for CoffeeScript
+- no support for CoffeeScript, but I needed it
 
 --
 
@@ -169,6 +172,11 @@ class: center, middle
 
 --
 
+```bash
+TypeError: The super constructor to `inherits` must have a prototype.
+```
+
+--
 
 😿
 
