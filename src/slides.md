@@ -153,6 +153,73 @@ class: center, middle
 
 ---
 
+## So I tried harder...
+
+--
+
+- install as a global package: 187.42 MiB in size
+
+--
+
+```bash
+🐢  chimp
+
+[chimp] Running...
+[selenium] { Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium'
+    at Error (native)
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium' }
+{ Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium'
+    at Error (native)
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium' }
+```
+
+--
+
+😿
+
+---
+
+## Let's try on FreeBSD!
+
+--
+
+```bash
+> npm install chimp
+```
+
+--
+
+wait 5-10 minutes...
+
+--
+
+```bash
+Installed in `/usr/home/freebsd/chimp/node_modules/fibers/bin/freebsd-x64-v8-3.14/fibers.node`
+
+[...]
+```
+
+--
+
+Run it...
+
+```bash
+> ./node_modules/.bin/chimp --browser=phantomjs
+Unsupported platform.
+```
+
+--
+
+😿
+
+---
+
 ## Jest
 
 - painless JavaScript unit testing
