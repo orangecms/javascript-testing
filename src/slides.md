@@ -257,6 +257,41 @@ class: center, middle
 ## Assert API
 
 ```JavaScript
+// import assert core library
+const assert = require('assert');
+```
+--
+```JavaScript
+// try a very simple test
+let foo = true;
+```
+--
+```JavaScript
+// okay let's check for equality
+assert.equal(foo, true);
+```
+--
+```JavaScript
+// and the negation
+assert.notEqual(foo, false);
+```
+--
+```JavaScript
+// sadly, it only checks with "==" :(
+assert.equal(foo, 1);
+```
+--
+```JavaScript
+// we can check for exceptions though...
+const bar = () => { throw new Error("kaboom"); };
+assert.throws(bar);
+```
+
+---
+
+## Assert API
+
+```JavaScript
 > assert
 { [Function: ok]
   AssertionError: 
@@ -283,11 +318,6 @@ class: center, middle
 ---
 
 class: center, middle
-## DEMO =^_^=
-
----
-
-class: center, middle
 # Medium-level: Jasmine
 
 ![Jasmine](img/jasmine_vertical.svg)
@@ -306,10 +336,10 @@ class: center, middle
 - can be used in many contexts
 - run from Node, Ruby, and Python
 
---
+---
 
-
-- DEMO?
+class: center, middle
+## DEMO 🐢
 
 ---
 
