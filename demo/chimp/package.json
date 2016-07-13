@@ -1,0 +1,19 @@
+{
+  "name": "chimp-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:chrome & npm run test:phantomjs",
+    "test:phantomjs": "LOG_DIR=\"log/phantomjs/\" chimp --browser=phantomjs --port=4466",
+    "test:firefox": "LOG_DIR=\"log/firefox/\" chimp --browser=firefox --port=4477",
+    "test:chrome": "LOG_DIR=\"log/chrome/\" xvfb-run chimp --browser=chrome --port=4488",
+    "test:meteor": "LOG_DIR=\"log/meteor/\" xvfb-run chimp --browser=chrome --port=4499 --ddp=http://localhost:3000",
+    "test:watch": "LOG_DIR=\"log/watch/\" xvfb-run chimp --browser=chrome --watch"
+  },
+  "author": "Daniel Maslowski <daniel.maslowski@shop.co> (https://shop.co/)",
+  "license": "MIT",
+  "devDependencies": {
+    "chimp": "^0.35.0"
+  }
+}
