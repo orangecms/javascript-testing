@@ -229,6 +229,11 @@ class: center, middle
 - parallel and sandboxed
 - automatically mocks modules
 
+--
+
+
+- DEMO?
+
 ---
 
 class: center, middle
@@ -278,6 +283,11 @@ class: center, middle
 
 
 - sets up Cucumber and Jasmine for you
+
+--
+
+
+- DEMO?
 
 ---
 
