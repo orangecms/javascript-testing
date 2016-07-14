@@ -1,6 +1,6 @@
 class: center, middle
 
-# JavaScript Testing Obstacles
+# Browser and unit testing Meteor applications
 
 ![Testing JavaScript](img/testing-main.svg)
 
@@ -11,15 +11,16 @@ Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github
 # ToC
 
 1. Introduction
-2. What doesn't work
-3. Low-level: Assert
-4. Medium-level: Jasmine
+2. Low-level: Assert
+3. Medium-level: Jasmine
+4. Medium-level: Jest
 5. High-level: Cucumber
+6. High-level: Chimp
 
 ---
 
 class: center, middle
-# Introduction
+# 1. Introduction
 
 ---
 
@@ -121,136 +122,7 @@ class: center, middle
 ---
 
 class: center, middle
-# What doesn't work
-
----
-
-class: center, middle
-# What doesn't work for me
-
----
-
-## Chimp
-
-- promises simplicity like Velocity
-- documentation is still in progress
-- best practice tutorial is highly complicated
-- installation takes a looong time
-- running the first time downloads a local copy of selenium
-
----
-
-## and then...
-
---
-
-100% CPU on a Node thread
-![Chimp process](img/chimp-dead.png)
-
---
-
-😿
-
----
-
-## So I tried harder...
-
---
-
-- install as a global package: 187.42 MiB in size
-
---
-
-```bash
-🐢  chimp
-
-[chimp] Running...
-[selenium] { Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium'
-    at Error (native)
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium' }
-{ Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium'
-    at Error (native)
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/chimp/node_modules/selenium-standalone/.selenium' }
-```
-
---
-
-😿
-
----
-
-## Let's try on FreeBSD!
-
---
-
-```bash
-> npm install chimp
-```
-
---
-
-wait 5-10 minutes...
-
---
-
-```bash
-Installed in `/usr/home/freebsd/chimp/node_modules/fibers/bin/freebsd-x64-v8-3.14/fibers.node`
-
-[...]
-```
-
---
-
-Run it...
-
-```bash
-> ./node_modules/.bin/chimp --browser=phantomjs
-Unsupported platform.
-```
-
---
-
-😿
-
----
-
-## Jest
-
-- painless JavaScript unit testing
-- uses Jasmine assertions
-- parallel and sandboxed
-- automatically mocks modules
-
---
-
-
-- no support for CoffeeScript, but I needed it
-
---
-
-
-- I tried really, really, *really* hard
-
---
-
-```bash
-TypeError: The super constructor to `inherits` must have a prototype.
-```
-
---
-
-😿
-
----
-
-class: center, middle
-# Low-level: Assert 
+# 2. Low-level: Assert 
 
 ---
 
@@ -318,7 +190,7 @@ assert.throws(bar);
 ---
 
 class: center, middle
-# Medium-level: Jasmine
+# 3. Medium-level: Jasmine
 
 ![Jasmine](img/jasmine_vertical.svg)
 
@@ -344,7 +216,23 @@ class: center, middle
 ---
 
 class: center, middle
-# High-level: Cucumber
+# 4. Medium-level: Jest
+
+![Jest](img/jest.png)
+
+---
+
+## Jest
+
+- painless JavaScript unit testing
+- uses Jasmine assertions
+- parallel and sandboxed
+- automatically mocks modules
+
+---
+
+class: center, middle
+# 5. High-level: Cucumber
 
 ![Cucumber](img/cucumber-logo.svg)
 
@@ -367,6 +255,29 @@ class: center, middle
 
 
 - DEMO?
+
+---
+
+class: center, middle
+# 6. High-level: Chimp
+
+![Chimp](img/chimp.png)
+
+---
+
+## Chimp
+
+- promises simplicity like Velocity
+- documentation is still in progress
+- best practice tutorial is highly complicated
+- installation takes a looong time
+- running the first time downloads a local copy of selenium
+- does not work on FreeBSD (bad in case it's your CI server)
+
+--
+
+
+- sets up Cucumber and Jasmine for you
 
 ---
 
