@@ -13,7 +13,7 @@
   "author": "Daniel Maslowski <daniel.maslowski@shop.co> (https://shop.co/)",
   "license": "MIT",
   "dependencies": {
-    "emoji-generator": "^1.0.6",
+    "emoji-generator": "^1.0.7",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   },
