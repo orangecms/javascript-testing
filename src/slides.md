@@ -1,6 +1,7 @@
 class: center, middle
 
-# Browser and unit testing Meteor applications
+# Fail fast and succeed!
+Test-Driven JavaScript Application Development
 
 ![Testing JavaScript](img/testing-main.svg)
 
