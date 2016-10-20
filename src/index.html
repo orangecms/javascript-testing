@@ -18,10 +18,15 @@
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
       ul, ol {
         margin: 15px 0;
-        list-style-image: url('img/meteor.png');
+        list-style: none;
+      }
+      li::before {
+        content: '🐢';
+        margin-right: 10px;
+        font-size: 32px;
       }
       li {
-        margin: 15px 0;
+        margin: 15px -30px;
       }
       .remark-visible p {
         display: flex;
