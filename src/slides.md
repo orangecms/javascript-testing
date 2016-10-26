@@ -27,17 +27,17 @@ class: center, middle
 
 ## Terminology
 
-- SuT: system under test
+- SUT: system under test
 - suite/feature: a portion of the test
   - setup: shortcut to the initial state of a case
   - case/step: unit of a suite/feature
-  - teardown: cleanup, reset to initial state of the SuT
+  - teardown: cleanup, reset to initial state of the SUT
 
 ---
 
 ## Relation to control flow chart
 
-- suite/feature: connected subgraph of the SuT
+- suite/feature: connected subgraph of the SUT
 - case/step: a state transition (edge in graph)
 
 ![Flowchart](img/testing-flowchart.svg)
