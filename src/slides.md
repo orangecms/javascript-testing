@@ -25,25 +25,6 @@ class: center, middle
 
 ---
 
-## Terminology
-
-- SUT: system under test
-- suite/feature: a portion of the test
-  - setup: shortcut to the initial state of a case
-  - case/step: unit of a suite/feature
-  - teardown: cleanup, reset to initial state of the SUT
-
----
-
-## Relation to control flow chart
-
-- suite/feature: connected subgraph of the SUT
-- case/step: a state transition (edge in graph)
-
-![Flowchart](img/testing-flowchart.svg)
-
----
-
 ## Why should I write tests?
 
 - proof that software works (as specified)
@@ -70,6 +51,39 @@ class: center, middle
 
 ---
 
+## Terminology
+
+- SUT: system under test
+- suite/feature: a portion of the test
+  - setup: shortcut to the initial state of a case
+  - case/step: unit of a suite/feature
+  - teardown: cleanup, reset to initial state of the SUT
+- assertion/expectation: statement in a step making it fail or pass
+
+---
+
+## Relation to control flow chart
+
+- suite/feature: connected subgraph of the SUT
+- case/step: a state transition (edge in graph)
+
+![Flowchart](img/testing-flowchart.svg)
+
+---
+
+## Test Doubles
+
+- test double: a function or an object for simulation
+  - fake: implementing an API but returning nothing
+  - stub: implementing an API partially and returning canned replies
+  - mock: implementing an API with assertions but no real output
+- spy: a wrapper to help with assertions on input to a mock or stub
+
+http://www.martinfowler.com/bliki/TestDouble.html
+https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
+
+---
+
 ## Test runners
 
 - provide a CLI
@@ -84,7 +98,7 @@ class: center, middle
 
 ---
 
-## Frameworks
+## Frameworks and Libraries
 
 - Assert
 - Jasmine
@@ -93,10 +107,9 @@ class: center, middle
 --
 
 
-- tape
 - Mocha
 - Chai
-- AVA
+- Sinon
 - Jest
 - Enzyme
 
@@ -114,11 +127,16 @@ class: center, middle
   - chromedriver
   - webdriverjs
   - WebdriverIO
+  - Chimp
 
 --
 
 
+- PhantomJS
+- CasperJS
+- SlimerJS
 - Karma
+- Cypress
 
 ---
 
