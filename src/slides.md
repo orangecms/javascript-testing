@@ -73,10 +73,11 @@ class: center, middle
 
 ## Test Doubles
 
-- test double: a function or an object for simulation
-  - fake: implementing an API but returning nothing
-  - stub: implementing an API partially and returning canned replies
-  - mock: implementing an API with assertions but no real output
+- test double: object for simulation (partially) implementing an API
+  - dummy: test double returning nothing
+  - stub: test double returning canned replies
+  - fake: test double taking shortcuts, close to its real counterpart
+  - mock: test double with assertions but no real output
 - spy: a wrapper to help with assertions on input to a mock or stub
 
 http://www.martinfowler.com/bliki/TestDouble.html
@@ -101,8 +102,16 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 ## Frameworks and Libraries
 
 - Assert
-- Jasmine
+
+--
+
+
 - Cucumber
+
+--
+
+
+- Jasmine
 
 --
 
@@ -110,13 +119,18 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 - Mocha
 - Chai
 - Sinon
+
+--
+
+
 - Jest
 - Enzyme
 
 --
 
 
-- ...
+- tape
+- AVA
 
 ---
 
