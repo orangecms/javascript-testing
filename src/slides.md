@@ -35,7 +35,7 @@ class: center, middle
 
 ## What should I write tests for?
 
-- libraries: do methods return desired output in given input?
+- libraries: do methods return desired output on given input?
 - components: do they receive and handle input correctly?
 - applications: do routes, form submissions etc work? 
 
@@ -71,20 +71,6 @@ class: center, middle
 
 ---
 
-## Test Doubles
-
-- test double: object for simulation (partially) implementing an API
-  - dummy: test double returning nothing
-  - stub: test double returning canned replies
-  - fake: test double taking shortcuts, close to its real counterpart
-  - mock: test double with assertions but no real output
-- spy: a wrapper to help with assertions on input to a mock or stub
-
-http://www.martinfowler.com/bliki/TestDouble.html
-https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
-
----
-
 ## Test runners
 
 - provide a CLI
@@ -99,58 +85,104 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 
 ---
 
-## Frameworks and Libraries
+## Test doubles
 
-- Assert
+- test double: object for simulation (partially) implementing an API
 
 --
 
+
+- dummy: test double returning nothing
+
+--
+
+
+- stub: test double returning canned replies
+
+--
+
+
+- fake: test double taking shortcuts, close to its real counterpart
+
+--
+
+
+- mock: test double with assertions but no real output
+
+--
+
+
+- spy: a wrapper to help with assertions on input to a mock or stub
+
+http://www.martinfowler.com/bliki/TestDouble.html
+https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
+
+---
+
+## Frameworks and Libraries
+
+--
+
+### Simple
+
+- Assert
+
+
+--
+
+- tape
+
+--
+
+### Behavior-driven development (BDD)
+
+--
+
+.column2[
+- Mocha
+  - Chai
+  - Sinon
+- AVA
+]
+
+--
+
+.column2[
+- Jasmine
+- Jest
+  - Enzyme
+]
+
+---
+
+## Frameworks and Libraries
+
+--
+
+### End-to-end / Browser testing
 
 - Cucumber
 
 --
 
-
-- Jasmine
-
---
-
-
-- Mocha
-- Chai
-- Sinon
-
---
-
-
-- Jest
-- Enzyme
-
---
-
-
-- tape
-- AVA
-
----
-
-## Browser testing
-
+.column2[
 - many ways to use Selenium
   - selenium-webdriver
   - chromedriver
   - webdriverjs
   - WebdriverIO
   - Chimp
+]
 
 --
 
-
+.column2[
 - PhantomJS
 - CasperJS
 - SlimerJS
 - Karma
 - Cypress
+]
 
 ---
 
@@ -229,7 +261,7 @@ class: center, middle
 
 ---
 
-## Jasmine outline
+## Jasmine
 
 - useful for unit testing
 - descriptive test suites and cases
@@ -240,6 +272,66 @@ class: center, middle
 - extensible with custom matchers
 - can be used in many contexts
 - run from Node, Ruby, and Python
+
+---
+
+## Jasmine spec example
+
+```JavaScript
+describe('rng', () => {
+  /* ... */
+};
+```
+
+---
+
+## Jasmine spec example
+
+```JavaScript
+describe('rng', () => {
+  it('should generate a random number', () => {
+    /* ... */
+  });
+};
+```
+
+---
+
+## Jasmine spec example
+
+```JavaScript
+const rng = require('..');
+require('jasmine-expect');
+
+describe('rng', () => {
+  it('should return a number', () => {
+    const random1 = rng();
+    expect(random1).toBeNumber();
+  });
+};
+```
+
+---
+
+## Jasmine spec example
+
+```JavaScript
+const rng = require('..');
+require('jasmine-expect');
+
+describe('rng', () => {
+  it('should return a number', () => {
+    const random1 = rng();
+    expect(random1).toBeNumber();
+  });
+
+  it('should generate a random number', () => {
+    const random1 = rng();
+    const random2 = rng();
+    expect(random1).not.toEqual(random2);
+  });
+};
+```
 
 ---
 
