@@ -121,16 +121,21 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 
 ## Frameworks and Libraries
 
---
-
 ### Simple
 
-- Assert
+--
 
+.column2[
+- Assert
+- QUnit
+]
 
 --
 
+.column2[
 - tape
+- teenytest
+]
 
 --
 
@@ -139,10 +144,11 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 --
 
 .column2[
-- Mocha
-  - Chai
-  - Sinon
+- Mocha (suites)
+  - Chai (expectations)
+  - Sinon (spies, test doubles)
 - AVA
+- testdouble.js
 ]
 
 --
@@ -157,11 +163,7 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 
 ## Frameworks and Libraries
 
---
-
 ### End-to-end / Browser testing
-
-- Cucumber
 
 --
 
@@ -170,6 +172,7 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
   - selenium-webdriver
   - chromedriver
   - webdriverjs
+  - Protractor
   - WebdriverIO
   - Chimp
 ]
@@ -180,6 +183,7 @@ https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 - PhantomJS
 - CasperJS
 - SlimerJS
+- Cucumber
 - Karma
 - Cypress
 ]
