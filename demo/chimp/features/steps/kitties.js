@@ -4,8 +4,8 @@ const logdir = process.env.LOG_DIR;
 
 module.exports = function () {
   let kitties;
-  this.Given(/^I open the main site$/, function () { 
-    browser.url('http://localhost:3000');
+  this.Given(/^I open (.*)$/, function (url) {
+    browser.url(url);
   });
 
   this.When(/^I add a kitty named Moni$/, function () {
