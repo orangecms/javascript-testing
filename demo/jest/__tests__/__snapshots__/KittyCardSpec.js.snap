@@ -1,0 +1,21 @@
+exports[`KittyCard renders correctly 0`] = `
+<figure
+  style={
+    Object {
+      "border": "5px solid purple",
+      "font": "bold 24pt Roboto-Regular, sans-serif",
+      "margin": 5,
+      "padding": 10
+    }
+  }>
+  <img
+    src="http://thecatapi.com/api/image/get?meow=123" />
+  <figcaption>
+    Miss Kitty Fantastico
+     is cat #
+    123
+     
+    😸
+  </figcaption>
+</figure>
+`;
