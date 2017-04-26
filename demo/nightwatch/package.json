@@ -1,0 +1,16 @@
+{
+  "name": "nightwatch-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chromedriver": "^2.29.0",
+    "nightwatch": "^0.9.14",
+    "selenium-server-standalone-jar": "3.4.0"
+  }
+}
