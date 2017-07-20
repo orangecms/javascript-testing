@@ -2,16 +2,23 @@ const assert = require('assert');
 
 module.exports = function () {
   this.Given(/^I open (.*)$/, function (url) {
-    browser.url(url);
+    client.url(url);
+    const resetButton = 'header > button';
+    client.waitForExist(resetButton);
+    client.click(resetButton);
   });
 
-  this.When(/^I add a kitty named Moni$/, function () {
-    // TODO: deploy app with form and use it here
-    // server.call('Kitties.add', 'Moni');
+  this.When(/^I add a kitty named (.+)/, function (name) {
+    client.waitForExist('form');
+    client.setValue('input', name);
+    client.submitForm('form');
+    client.pause(1000); // give it some time
   });
 
   this.Then(/^there should be (\d+) cats$/, function (count) {
-    const kitties = browser.elements('li').value;
-    assert.equal(count, kitties.length);
+    client.waitForExist('li');
+    client.pause(500); // querying the DOM can be faster than rendering -.-
+    const kitties = client.elements('li').value;
+    assert.equal(kitties.length, count);
   });
 }
