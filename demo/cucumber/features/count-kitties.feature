@@ -5,5 +5,5 @@ Feature: Count kitties
 
   Scenario:
     Given I open the main site
-    When I count the cat pics
-    Then there should be 3
+    When I hit reset
+    Then there should be 3 cats

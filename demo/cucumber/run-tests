@@ -1,7 +1,0 @@
-#!/bin/bash
-
-exec -a selenium selenium-start &
-export PATH=node_modules/.bin:$PATH
-cucumber-js
-killall phantomjs
-pkill -f selenium
