@@ -34,4 +34,5 @@ If everything works, I'm happy. If something doesn't, please reach out to me,
 because that's why I'm doing this! 🐢
 
 #### Known issues
-For the cucumber tests, you will need to kill the `java` process manually.
+For the Chimp tests, it can happen that processes remain that you need to kill
+manually.

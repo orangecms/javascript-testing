@@ -3,8 +3,8 @@ const { defineSupportCode } = require('cucumber');
 
 defineSupportCode(function({ Given, When, Then }) {
   Given(/^I open the main site$/, function() {
-     return this.visit('https://metaspora.org/meteor-react-testing/');
-   });
+    return this.visit('https://metaspora.org/meteor-react-testing/');
+  });
 
   When('I hit reset', function() {
     const resetButton = 'header > button';
