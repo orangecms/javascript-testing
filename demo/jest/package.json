@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.29.3",
-    "babel-jest": "^13.2.2",
+    "babel-jest": "^19.0.0",
     "enzyme": "^2.8.2",
     "eslint": "^3.9.1",
     "eslint-config-airbnb": "^12.0.0",
@@ -33,7 +33,9 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
     "jasmine-expect": "^3.0.1",
-    "jest-cli": "^13.2.3",
+    "jest-cli": "^19.0.2",
+    "jest-meteor-mocks": "^1.0.0",
+    "meteor-node-stubs": "^0.2.6",
     "nock": "^9.0.2",
     "react-dom": "^15.3.1",
     "react-test-renderer": "^15.5.4"
@@ -45,6 +47,10 @@
     ],
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/*"
+    ],
+    "modulePaths": [
+      "<rootDir>/node_modules",
+      "<rootDir>/stubs"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/",
