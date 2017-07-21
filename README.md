@@ -1,9 +1,11 @@
 ## About
-
 These are slides for a talk on obstacles encountered when testing JavaScript.
 
-## Installation
+I highly recommend reading the book
+[Maintainable JavaScript](http://shop.oreilly.com/product/0636920025245.do)
+by Nicholas Zakas.
 
+## Installation
 You will need Node.js, npm, Bower, and Gulp.
 
 ### Run the slides
@@ -24,11 +26,12 @@ npm install && gulp
 The app will be running on `http://localhost:8012`.
 
 ### Demos
-
-Demos are in `demo/jasmine/` and `demo/cucumber/` respectively.
-
-For the `cucumber` tests, you will need `phantomjs` and `selenium-start` installed and available in your `$PATH`.
+Demos are in `demo/*/` respectively.
 
 To run them, in either directory run `npm install && npm test`.
 
-If it works, I'm happy. If something doesn't, please reach out to me, because that's why I'm doing this! 🐢
+If everything works, I'm happy. If something doesn't, please reach out to me,
+because that's why I'm doing this! 🐢
+
+#### Known issues
+For the cucumber tests, you will need to kill the `java` process manually.
