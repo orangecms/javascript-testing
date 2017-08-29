@@ -115,6 +115,7 @@ class: center, middle
 - spy: a wrapper to help with assertions on input to a mock or stub
 
 http://www.martinfowler.com/bliki/TestDouble.html
+
 https://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html
 
 ---
