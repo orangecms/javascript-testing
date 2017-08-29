@@ -1,6 +1,6 @@
 class: center, middle
 
-# Fail fast and succeed!
+# Fail Fast and Succeed!
 Test-Driven JavaScript Application Development
 
 ![Testing JavaScript](img/testing-main.svg)
