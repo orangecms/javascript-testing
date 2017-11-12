@@ -82,10 +82,9 @@ class: center, middle
 
 ### Prior knowledge
 
-- blackbox - no
+- blackbox - none
 - graybox - partial
 - whitebox - full
-See academic research
 
 ---
 
