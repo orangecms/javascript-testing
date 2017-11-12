@@ -5,7 +5,9 @@ Test-Driven JavaScript Application Development
 
 ![Testing JavaScript](img/testing-main.svg)
 
-Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github.png) orangecms
+Daniel Maslowski |
+![Twitter](img/twitter.png) [@orangecms](https://twitter.com/orangecms) |
+![GitHub](img/github.png) [orangecms](https://github.com/orangecms)
 
 ---
 
@@ -21,13 +23,21 @@ Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github
 ---
 
 class: center, middle
+# 0. Disclaimer
+
+## [Testing is hard 🥒](https://munchies.vice.com/en_us/article/53qpvb/what-its-like-to-be-a-professional-pickle-tester)
+
+---
+
+class: center, middle
 # 1. Introduction
 
 ---
 
 ## Why should I write tests?
 
-- proof that software works (as specified)
+- humans are prone to errors
+- prove that software works (as specified)
 - regression mitigation: makes later changes easier
 - design flaw detection: tests outline API/UI usage
 
@@ -48,6 +58,34 @@ class: center, middle
   - identify essential operations like transformations
 - the more, the better :)
 - when you find a bug, write a test to avoid it later
+
+---
+
+## Common [approaches](http://toolsqa.com/blogs/test-approach-and-comparisons-between-atdd-tdd-and-bdd/)?
+
+- TDD - write tests prior to implementation
+  - ATDD - acceptance tests on a high level
+- BDD (behavior) - style of expression as specifications with expectations
+  - EDD (example) - specifications by example
+- YDD (YOLO) - why test anyway? Users report bugs
+
+---
+
+## Classification
+
+### Scopes
+- unit - logic (input and output)
+- integration - logic + communication
+- end-to-end - logic, communication + presentation
+
+--
+
+### Prior knowledge
+
+- blackbox - no
+- graybox - partial
+- whitebox - full
+See academic research
 
 ---
 
@@ -341,11 +379,6 @@ describe('rng', () => {
 ---
 
 class: center, middle
-## DEMO 🐢
-
----
-
-class: center, middle
 # 4. Medium-level: Jest
 
 ![Jest](img/jest.png)
@@ -358,11 +391,6 @@ class: center, middle
 - uses Jasmine assertions
 - parallel and sandboxed
 - automatically mocks modules
-
---
-
-
-- DEMO?
 
 ---
 
@@ -386,11 +414,6 @@ class: center, middle
 
 - I got it working with WebdriverIO!
 
---
-
-
-- DEMO?
-
 ---
 
 class: center, middle
@@ -413,11 +436,6 @@ class: center, middle
 
 
 - sets up Cucumber and Jasmine for you
-
---
-
-
-- DEMO?
 
 ---
 
